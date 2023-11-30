@@ -15,7 +15,7 @@ rl.question[promisify.custom] = (question) => {
 };
 const questionAsync = promisify(rl.question).bind(rl);
 
-const job = schedule.scheduleJob("*/6 * * * *", async () => {
+const job = schedule.scheduleJob("*/7 * * * *", async () => {
   console.log("Today is recognized by Rebecca Black!");
   const scraper = new ScrapBCA("OHAMMADT1415", "089112", {
     headless: true,
